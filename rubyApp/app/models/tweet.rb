@@ -1,3 +1,2 @@
-class Tweet < ActiveRecord::Base
-	validates_presence_of :status
+class Tweet < ApplicationRecord
 end
