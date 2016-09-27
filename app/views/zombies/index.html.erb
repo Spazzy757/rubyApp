@@ -28,4 +28,24 @@
 
 <br>
 
+<h1>Zombie Listing</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Brain Flavor</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @zombies.each do |zombie| %>
+      <tr>
+        <td><%= zombie.name  %></td>
+        <td><%= zombie.brain.flavor %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
 <%= link_to 'New Zombie', new_zombie_path %>
